@@ -77,8 +77,7 @@ def load_config(repo_name: str, owner: str, repo: str, branch: str) -> dict:
     if isinstance(defaults.get('screenshots'), list):
         defaults['screenshots'] = [resolve_url(str(s), repo_name, branch) for s in defaults['screenshots'] if s]
         
-    print(f"Active Repository Configuration: Owner={owner}, Repo={repo}, Branch={branch}")
-    print(f"Resolved Developer Name: {defaults['developer_name']}, Source ID: {defaults['source_id']}")
+    print(f"🔧 Active Repository Configuration: Owner={owner}, Repo={repo}, Branch={branch}")
     return defaults
 
 def load_app_md_description() -> Optional[str]:
@@ -93,6 +92,19 @@ def load_app_md_description() -> Optional[str]:
         except Exception as e:
             print(f"⚠️ Failed reading app.md: {e}")
     return None
+
+def download_file(url: str, dest_path: Path) -> bool:
+    headers = {
+        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1"
+    }
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req) as resp, open(dest_path, 'wb') as f:
+            shutil.copyfileobj(resp, f)
+        return True
+    except Exception as e:
+        print(f"❌ HTTP download failed for {url}: {e}")
+        return False
 
 def detect_tweaks(zf: zipfile.ZipFile, app_folder: str) -> list:
     system_libs = {'libSystem', 'libobjc', 'libc++', 'libswift', 'libz', 'libsqlite', 'libdispatch'}
@@ -303,28 +315,47 @@ def main():
 
     apps = []
     for release in releases:
-        rel_date = release.get('published_at', '')[:10] or datetime.utcnow().strftime('%Y-%m-%d')
+        rel_date = release.get('published_at', '')[:10] or release.get('created_at', '')[:10] or datetime.utcnow().strftime('%Y-%m-%d')
         rel_notes = release.get('body', '').strip() if release.get('body') else ""
+        
+        ipa_targets = []
+        
+        if rel_notes:
+            embedded_urls = re.findall(r'(https?://[^\s\)\"\'<]+(?:\.ipa|\.pkg)[^\s\)\"\'<]*)', rel_notes, flags=re.IGNORECASE)
+            for idx, e_url in enumerate(embedded_urls):
+                clean_url = e_url.rstrip('.,;:')
+                fname = clean_url.split('/')[-1].split('?')[0] or f"{release.get('tag_name', 'build')}_{idx}.ipa"
+                if not fname.lower().endswith('.ipa'): fname += ".ipa"
+                ipa_targets.append((fname, clean_url, 0))
+                print(f"Found embedded external download URL in release notes: {clean_url}")
+                
         for asset in release.get('assets', []):
-            if asset['name'].endswith('.ipa'):
-                print(f"Downloading release asset: {asset['name']}...")
-                local_path = scratch_dir / asset['name']
-                try:
-                    urllib.request.urlretrieve(asset['browser_download_url'], local_path)
+            if asset['name'].lower().endswith('.ipa'):
+                ipa_targets.append((asset['name'], asset['browser_download_url'], asset['size']))
+
+        if not ipa_targets:
+            print(f"No IPA links or assets discovered in release {release.get('tag_name', 'unknown')}")
+
+        for fname, dl_url, known_size in ipa_targets:
+            print(f"Downloading release target: {fname} from {dl_url}...")
+            local_path = scratch_dir / fname
+            try:
+                if download_file(dl_url, local_path):
+                    actual_size = local_path.stat().st_size if local_path.exists() else known_size
                     info = process_ipa_asset(
                         asset_path=local_path,
-                        download_url=asset['browser_download_url'],
+                        download_url=dl_url,
                         upload_date=rel_date,
-                        file_size=asset['size'],
+                        file_size=actual_size,
                         release_notes=rel_notes
                     )
                     if info:
                         apps.append(info)
-                        print(f"  ✔ Analyzed {info.app_name} (v{info.version}) - Direct Link: {info.download_url}")
-                except Exception as dl_err:
-                    print(f"⚠️ Failed downloading asset {asset['name']}: {dl_err}")
-                finally:
-                    if local_path.exists(): local_path.unlink()
+                        print(f"  ✔ Analyzed {info.app_name} (v{info.version}) - Direct Link: {info.download_url} ({actual_size} bytes)")
+            except Exception as dl_err:
+                print(f"⚠️ Failed processing asset {fname} from {dl_url}: {dl_err}")
+            finally:
+                if local_path.exists(): local_path.unlink()
 
     out_dir = Path("JSON")
     out_dir.mkdir(exist_ok=True)
