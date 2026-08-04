@@ -1,0 +1,14 @@
+{
+  "name": "APEX",
+  "identifier": "com.xesurient.apex",
+  "subtitle": "Official APEX Releases",
+  "description": "Official release builds from APEX.",
+  "version": "1.0.0",
+  "accentColor": {
+    "red": 1.0,
+    "green": 0.2,
+    "blue": 0.4
+  },
+  "iconURL": "https://raw.githubusercontent.com/xEsurient/APEX/main/Assets/repo_icon.png",
+  "apps": []
+}
