@@ -1,0 +1,22 @@
+# Repo Configuration
+source_name: "APEX"
+source_id: "auto"              # "auto" dynamically converts to com.<owner>.<repo>
+source_subtitle: "Official APEX Releases"
+source_description: "Official release builds from APEX."
+tint_color: "#FF3366"
+
+# URL Configuration
+# "auto" dynamically resolves to the host repository's web URL and releases page.
+website: "auto"
+icon_url: "Assets/repo_icon.png"
+header_url: "Assets/repo_header.png"
+news_url: "auto"
+
+# Optional: Screenshot URLs
+screenshots:
+  # - "Assets/screenshot1.png"
+  # - "Assets/screenshot2.png"
+
+# App & Feed settings
+max_versions: 15
+min_ios_version_fallback: "14.0"

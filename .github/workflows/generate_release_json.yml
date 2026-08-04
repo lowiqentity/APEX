@@ -1,0 +1,61 @@
+name: APEX Automated Feed Generator
+
+on:
+  release:
+    types: [published, edited, released]
+  
+  schedule:
+    - cron: '0 0 * * *'
+  
+  workflow_dispatch:
+    inputs:
+      force_regeneration:
+        description: 'Force feed JSON regen across all releases'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate-feeds:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Inspection Dependencies
+        run: |
+          pip install httpx pyyaml plistlib biplist PyGithub
+
+      - name: Generate Feeds from Release Assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_release_feeds.py
+
+      - name: Commit and Deploy Feed Files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "xEsurient+github-actions[bot]@users.noreply.github.com"
+          
+          DATE=$(date +"%B %d, %Y - %H:%M UTC")
+          
+          mkdir -p JSON
+          git add JSON/*.json
+          
+          if git diff --staged --quiet; then
+            echo "✔ No changes detected in published release asset feeds."
+          else
+            git commit -m "Auto-Update Release Feeds: ${DATE}"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
