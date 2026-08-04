@@ -35,7 +35,7 @@ jobs:
 
       - name: Install Inspection Dependencies
         run: |
-          pip install httpx pyyaml plistlib biplist PyGithub
+          pip install pyyaml httpx biplist PyGithub
 
       - name: Generate Feeds from Release Assets
         env:

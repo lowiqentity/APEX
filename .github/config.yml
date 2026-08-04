@@ -3,6 +3,7 @@ source_name: "APEX"
 source_id: "auto"              # "auto" dynamically converts to com.<owner>.<repo>
 source_subtitle: "Official APEX Releases"
 source_description: "Official release builds from APEX."
+developer_name: "auto"         # "auto" dynamically adapts to the host GitHub repository owner
 tint_color: "#FF3366"
 
 # URL Configuration
