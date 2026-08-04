@@ -1,12 +1,10 @@
-# ⚡ APEX Repository
+# APEX
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/lowiqentity/APEX?style=for-the-badge&color=FF3366&label=Latest%20Release" alt="Release">
   <img src="https://img.shields.io/github/actions/workflow/status/lowiqentity/APEX/generate_release_json.yml?branch=main&style=for-the-badge&label=Feed%20Generator" alt="Workflow Status">
   <img src="https://img.shields.io/badge/Signers-Feather%20%7C%20Esign%20%7C%20Scarlet%20%7C%20AltStore-00BFA6?style=for-the-badge" alt="Supported Signers">
 </p>
-
-**APEX**
 
 ---
 
