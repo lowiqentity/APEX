@@ -24,7 +24,6 @@
 ---
 
 ## 📸 Screenshots
-
 <p align="center">
   <!-- <img src="https://raw.githubusercontent.com/lowiqentity/APEX/main/assets/screenshot1.png" width="250" alt="Screenshot 1">&nbsp;&nbsp; -->
   <!-- <img src="https://raw.githubusercontent.com/lowiqentity/APEX/main/assets/screenshot2.png" width="250" alt="Screenshot 2">&nbsp;&nbsp; -->
