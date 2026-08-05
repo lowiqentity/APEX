@@ -1,0 +1,49 @@
+{
+  "name": "APEX",
+  "identifier": "com.lowiqentity.apex",
+  "subtitle": "Official APEX Releases",
+  "description": "Official release builds from APEX.",
+  "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
+  "headerURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_header.png",
+  "website": "https://github.com/lowiqentity/APEX",
+  "tintColor": "#FF3366",
+  "apps": [
+    {
+      "name": "YouTube",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "lowiqentity",
+      "subtitle": "YouTube for iOS",
+      "version": "21.30.5",
+      "versionDate": "2026-08-05",
+      "versionDescription": "Release v21.30.5\n\nRelease: https://files.catbox.moe/q7cvav.ipa\r\n\r\nFixed all bugs under issues.",
+      "downloadURL": "https://files.catbox.moe/q7cvav.ipa",
+      "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
+      "tintColor": "#FF3366",
+      "size": 131628460,
+      "appPermissions": {
+        "privacy": {
+          "NSCameraUsageDescription": "This lets you create videos using the app.",
+          "NSUserTrackingUsageDescription": "To personalize ads and provide ad measurement, YouTube will link activity from this app with activity from non-Google apps and websites.",
+          "NSBluetoothPeripheralUsageDescription": "YouTube needs bluetooth access to scan for nearby Cast devices.",
+          "NSLocalNetworkUsageDescription": "Access to your network allows YouTube to discover and connect to devices such as your TV.",
+          "NSAppleMusicUsageDescription": "This lets you add your own audio files to your videos.",
+          "NSMicrophoneUsageDescription": "This lets you include audio with your videos and search using your voice.",
+          "NSLocationWhenInUseUsageDescription": "This enables local content discovery, improved recommendations, and enhanced search results.",
+          "NSContactsUsageDescription": "Your contacts will be sent to YouTube servers to help you find friends to share videos with.",
+          "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created."
+        }
+      },
+      "versions": [
+        {
+          "version": "21.30.5",
+          "date": "2026-08-05",
+          "localizedDescription": "Release v21.30.5\n\nRelease: https://files.catbox.moe/q7cvav.ipa\r\n\r\nFixed all bugs under issues.",
+          "downloadURL": "https://files.catbox.moe/q7cvav.ipa",
+          "size": 131628460
+        }
+      ]
+    }
+  ],
+  "news": []
+}
