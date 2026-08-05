@@ -161,7 +161,15 @@ def generate_store_json(apps: List[AppInfo], config: dict, app_md_desc: Optional
     
     for bundle_id, bundle_apps in apps_by_bundle.items():
         bundle_apps.sort(key=lambda x: x.file_date, reverse=True)
-        bundle_apps = bundle_apps[:int(config['max_versions'])]
+        
+        unique_apps = []
+        seen_versions = set()
+        for app in bundle_apps:
+            if app.version not in seen_versions:
+                seen_versions.add(app.version)
+                unique_apps.append(app)
+                
+        bundle_apps = unique_apps[:int(config['max_versions'])]
         primary = bundle_apps[0]
         
         versions = []
@@ -250,7 +258,10 @@ def generate_scarlet_json(apps: List[AppInfo], config: dict, app_md_desc: Option
     except:
         rgb = {"red": 1.0, "green": 0.2, "blue": 0.4}
         
-    seen = {app.bundle_id: app for app in apps}
+    seen = {}
+    for app in apps:
+        if app.bundle_id not in seen:
+            seen[app.bundle_id] = app
     scarlet_apps = []
     for app in seen.values():
         localized_desc = app_md_desc if app_md_desc is not None else f"{app.app_name} for iOS"

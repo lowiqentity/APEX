@@ -26,6 +26,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v5
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Set up Python 3.12
@@ -57,5 +58,5 @@ jobs:
             echo "✔ No changes detected in published release asset feeds."
           else
             git commit -m "Auto-Update Release Feeds: ${DATE}"
-            git push origin HEAD:${{ github.ref_name }}
+            git push origin HEAD:main
           fi
