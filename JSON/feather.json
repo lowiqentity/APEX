@@ -3,8 +3,8 @@
   "identifier": "com.lowiqentity.apex",
   "subtitle": "Official APEX Releases",
   "description": "Official release builds from APEX.",
-  "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.3/Assets/repo_icon.png",
-  "headerURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.3/Assets/repo_header.png",
+  "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
+  "headerURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_header.png",
   "website": "https://github.com/lowiqentity/APEX",
   "tintColor": "#FF3366",
   "apps": [
@@ -18,7 +18,7 @@
       "versionDescription": "Release v21.31.3\n\nRelease: https://files.catbox.moe/m7bzg9.ipa\r\n\r\nAdded:\r\n  - Complete localization of current APEX menus\r\n  - True Black Video Bars: Player Overlay → Overlay Appearance\r\n  - Fake Brightness: App & Appearance → Viewing Comfort\r\n  - Includes dimming level, scheduling, start/end times, and overnight schedules\r\n  - Bump to YouTube 21.31.3\r\n  \r\nFixed:\r\n  - Stretched icon for Video Quality\r\n  - Other minor fixes",
       "downloadURL": "https://files.catbox.moe/m7bzg9.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.3/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "tintColor": "#FF3366",
       "size": 132995893,
       "appPermissions": {
