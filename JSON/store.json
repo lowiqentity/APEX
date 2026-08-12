@@ -3,8 +3,8 @@
   "identifier": "com.lowiqentity.apex",
   "subtitle": "Official APEX Releases",
   "description": "Official release builds from APEX.",
-  "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
-  "headerURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_header.png",
+  "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_icon.png",
+  "headerURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_header.png",
   "website": "https://github.com/lowiqentity/APEX",
   "tintColor": "#FF3366",
   "apps": [
@@ -13,28 +13,35 @@
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "lowiqentity",
       "subtitle": "YouTube for iOS",
-      "version": "21.31.3",
-      "versionDate": "2026-08-09",
-      "versionDescription": "Release v21.31.3\n\nRelease: https://files.catbox.moe/m7bzg9.ipa\r\n\r\nAdded:\r\n  - Complete localization of current APEX menus\r\n  - True Black Video Bars: Player Overlay → Overlay Appearance\r\n  - Fake Brightness: App & Appearance → Viewing Comfort\r\n  - Includes dimming level, scheduling, start/end times, and overnight schedules\r\n  - Bump to YouTube 21.31.3\r\n  \r\nFixed:\r\n  - Stretched icon for Video Quality\r\n  - Other minor fixes",
-      "downloadURL": "https://files.catbox.moe/m7bzg9.ipa",
+      "version": "21.32.4",
+      "versionDate": "2026-08-12",
+      "versionDescription": "Release v21.32.4\n\nRelease: https://files.catbox.moe/hkk4xy.ipa\r\n\r\nFixed:\r\nAll recent bugs reported.",
+      "downloadURL": "https://files.catbox.moe/hkk4xy.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_icon.png",
       "tintColor": "#FF3366",
-      "size": 132995893,
+      "size": 135433910,
       "appPermissions": {
         "privacy": {
-          "NSCameraUsageDescription": "This lets you create videos using the app.",
-          "NSUserTrackingUsageDescription": "To personalize ads and provide ad measurement, YouTube will link activity from this app with activity from non-Google apps and websites.",
-          "NSBluetoothPeripheralUsageDescription": "YouTube needs bluetooth access to scan for nearby Cast devices.",
-          "NSLocalNetworkUsageDescription": "Access to your network allows YouTube to discover and connect to devices such as your TV.",
           "NSAppleMusicUsageDescription": "This lets you add your own audio files to your videos.",
-          "NSMicrophoneUsageDescription": "This lets you include audio with your videos and search using your voice.",
-          "NSLocationWhenInUseUsageDescription": "This enables local content discovery, improved recommendations, and enhanced search results.",
+          "NSBluetoothPeripheralUsageDescription": "YouTube needs bluetooth access to scan for nearby Cast devices.",
+          "NSCameraUsageDescription": "This lets you create videos using the app.",
           "NSContactsUsageDescription": "Your contacts will be sent to YouTube servers to help you find friends to share videos with.",
-          "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created."
+          "NSLocalNetworkUsageDescription": "Access to your network allows YouTube to discover and connect to devices such as your TV.",
+          "NSLocationWhenInUseUsageDescription": "This enables local content discovery, improved recommendations, and enhanced search results.",
+          "NSMicrophoneUsageDescription": "This lets you include audio with your videos and search using your voice.",
+          "NSPhotoLibraryUsageDescription": "This lets you upload media you've already created.",
+          "NSUserTrackingUsageDescription": "To personalize ads and provide ad measurement, YouTube will link activity from this app with activity from non-Google apps and websites."
         }
       },
       "versions": [
+        {
+          "version": "21.32.4",
+          "date": "2026-08-12",
+          "localizedDescription": "Release v21.32.4\n\nRelease: https://files.catbox.moe/hkk4xy.ipa\r\n\r\nFixed:\r\nAll recent bugs reported.",
+          "downloadURL": "https://files.catbox.moe/hkk4xy.ipa",
+          "size": 135433910
+        },
         {
           "version": "21.31.3",
           "date": "2026-08-09",
