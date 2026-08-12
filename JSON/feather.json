@@ -15,7 +15,7 @@
       "subtitle": "YouTube for iOS",
       "version": "21.32.4",
       "versionDate": "2026-08-12",
-      "versionDescription": "Release v21.32.4\n\nRelease: https://files.catbox.moe/hkk4xy.ipa\r\n\r\nFixed:\r\nAll recent bugs reported.",
+      "versionDescription": "Release v21.32.4\n\nRelease: https://files.catbox.moe/hkk4xy.ipa\r\n\r\nFixed:\r\n\r\n - All recent bugs reported.",
       "downloadURL": "https://files.catbox.moe/hkk4xy.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
       "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_icon.png",
@@ -38,7 +38,7 @@
         {
           "version": "21.32.4",
           "date": "2026-08-12",
-          "localizedDescription": "Release v21.32.4\n\nRelease: https://files.catbox.moe/hkk4xy.ipa\r\n\r\nFixed:\r\nAll recent bugs reported.",
+          "localizedDescription": "Release v21.32.4\n\nRelease: https://files.catbox.moe/hkk4xy.ipa\r\n\r\nFixed:\r\n\r\n - All recent bugs reported.",
           "downloadURL": "https://files.catbox.moe/hkk4xy.ipa",
           "size": 135433910
         },
