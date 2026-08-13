@@ -9,7 +9,7 @@
     "green": 0.2,
     "blue": 0.4
   },
-  "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_icon.png",
+  "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
   "apps": [
     {
       "name": "YouTube",
@@ -19,7 +19,7 @@
       "version": "21.32.4",
       "versionDate": "2026-08-12",
       "size": 135433910,
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "downloadURL": "https://files.catbox.moe/hkk4xy.ipa",
       "minOSVersion": "16.0",
       "supportedPlatforms": [

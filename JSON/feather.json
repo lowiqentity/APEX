@@ -3,8 +3,8 @@
   "identifier": "com.lowiqentity.apex",
   "subtitle": "Official APEX Releases",
   "description": "Official release builds from APEX.",
-  "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_icon.png",
-  "headerURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_header.png",
+  "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
+  "headerURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_header.png",
   "website": "https://github.com/lowiqentity/APEX",
   "tintColor": "#FF3366",
   "apps": [
@@ -18,7 +18,7 @@
       "versionDescription": "Release v21.32.4\n\nRelease: https://files.catbox.moe/hkk4xy.ipa\r\n\r\nFixed:\r\n\r\n - All recent bugs reported.",
       "downloadURL": "https://files.catbox.moe/hkk4xy.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "tintColor": "#FF3366",
       "size": 135433910,
       "appPermissions": {

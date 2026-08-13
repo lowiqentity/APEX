@@ -1,7 +1,7 @@
 {
   "name": "APEX",
   "identifier": "com.lowiqentity.apex",
-  "sourceURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/JSON/esign.json",
+  "sourceURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/JSON/esign.json",
   "author": "lowiqentity",
   "apps": [
     {
@@ -12,7 +12,7 @@
       "versionDate": "2026-08-12",
       "downloadURL": "https://files.catbox.moe/hkk4xy.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "size": 135433910
     },
     {
@@ -23,7 +23,7 @@
       "versionDate": "2026-08-09",
       "downloadURL": "https://files.catbox.moe/m7bzg9.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "size": 132995893
     },
     {
@@ -34,7 +34,7 @@
       "versionDate": "2026-08-05",
       "downloadURL": "https://files.catbox.moe/q7cvav.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "size": 131628460
     },
     {
@@ -45,7 +45,7 @@
       "versionDate": "2026-08-03",
       "downloadURL": "https://files.catbox.moe/5kz9oe.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.1.5/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "size": 131859933
     }
   ]
