@@ -1,7 +1,7 @@
 {
   "name": "APEX",
   "identifier": "com.lowiqentity.apex",
-  "sourceURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.2.0/JSON/esign.json",
+  "sourceURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/JSON/esign.json",
   "author": "lowiqentity",
   "apps": [
     {
@@ -12,7 +12,7 @@
       "versionDate": "2026-09-29",
       "downloadURL": "https://files.catbox.moe/l92jw1.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.2.0/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "size": 142427538
     },
     {
@@ -23,7 +23,7 @@
       "versionDate": "2026-08-25",
       "downloadURL": "https://files.catbox.moe/5bf4vq.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.2.0/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "size": 136226642
     },
     {
@@ -34,7 +34,7 @@
       "versionDate": "2026-08-12",
       "downloadURL": "https://files.catbox.moe/hkk4xy.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.2.0/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "size": 135433910
     },
     {
@@ -45,7 +45,7 @@
       "versionDate": "2026-08-09",
       "downloadURL": "https://files.catbox.moe/m7bzg9.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.2.0/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "size": 132995893
     },
     {
@@ -56,7 +56,7 @@
       "versionDate": "2026-08-05",
       "downloadURL": "https://files.catbox.moe/q7cvav.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.2.0/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "size": 131628460
     },
     {
@@ -67,7 +67,7 @@
       "versionDate": "2026-08-03",
       "downloadURL": "https://files.catbox.moe/5kz9oe.ipa",
       "localizedDescription": "APEX is a build of YouTube with custom enhancements.\n\nFeatures:\n- Injected with APEXHook & FlexCore",
-      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/0.2.0/Assets/repo_icon.png",
+      "iconURL": "https://raw.githubusercontent.com/lowiqentity/APEX/main/Assets/repo_icon.png",
       "size": 131859933
     }
   ]
